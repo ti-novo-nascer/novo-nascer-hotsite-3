@@ -1,0 +1,71 @@
+.place {
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+}
+
+.head {
+  h2 {
+    margin: 0;
+    font: 32px 'DM Serif Text', serif;
+    color: #5076B8;
+    text-align: center;
+  }
+  h3 {
+    margin: 0;
+    font: italic 24px 'DM Serif Text', serif;
+    color: #A09678;
+    text-align: center;
+  }
+}
+
+.body {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  div {
+    max-width: 720px;
+    a {
+      width: 60px;
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #FFFFFF;
+        }
+      }
+    }
+  }
+  a {
+    button {
+      padding: 12px 32px;
+      background: #837753;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      font: bold 16px 'Poppins', sans-serif;
+      color: #FFFFFF;
+      justify-self: center;
+      cursor: pointer;
+      transition: background 400ms;
+      &:hover {
+        background: #675D3E;
+      }
+    }
+  }
+}
+
+.carouselItem {
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}

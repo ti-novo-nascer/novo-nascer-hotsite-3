@@ -1,0 +1,21 @@
+.whatsAppButton {
+  width: 64px;
+  height: 64px;
+  background: #3E885B;
+  border: none;
+  border-radius: 8px;
+  display: grid;
+  cursor: pointer;
+  svg {
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+    path {
+      fill: #FFFFFF;
+    }
+  }
+  &:hover {
+    background: #33704C;
+  }
+}

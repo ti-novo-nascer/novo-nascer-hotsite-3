@@ -1,0 +1,87 @@
+.contactForm {
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper {
+  max-width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+}
+
+.head {
+  h2 {
+    margin: 0;
+    font: 32px 'DM Serif Text', serif;
+    color: #5076B8;
+    text-align: center;
+  }
+  h3 {
+    margin: 0;
+    font: italic 24px 'DM Serif Text', serif;
+    color: #A09678;
+    text-align: center;
+  }
+  a {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 8px;
+    font: bold 18px 'Poppins', sans-serif;
+    color: #A09678;
+    svg {
+      width: 24px;
+      path {
+        fill: #A09678;
+      }
+    }
+  }
+}
+
+.body {
+  display: grid;
+  gap: 12px;
+  div {
+    display: grid;
+    gap: 4px;
+    label {
+      font: bold 18px 'Poppins', sans-serif;
+      color: #A09678;
+    }
+    input, textarea {
+      padding: 4px 8px;
+      border: 1px solid #A09678;
+      border-radius: 4px;
+      font: 16px 'Poppins', sans-serif;
+      color: #A09678;
+    }
+    textarea {
+      resize: none;
+    }
+    small {
+      font: 14px 'Poppins', sans-serif;
+      color: #EF6461;
+    }
+  }
+  button[type='submit'] {
+    padding: 12px 32px;
+    background: #837753;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font: bold 16px 'Poppins', sans-serif;
+    color: #FFFFFF;
+    justify-self: center;
+    cursor: pointer;
+    transition: background 400ms;
+    &:hover {
+      background: #675D3E;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
