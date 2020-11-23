@@ -51,9 +51,9 @@ export default function Home({ pageData }) {
         phone={pageData.metadata.phone}
       />
       <Presentation {...pageData.presentation}/>
-      <CallToAction/>
+      <CallToAction phone={pageData.metadata.phone}/>
       <Content {...pageData.article}/>
-      <Motivational/>
+      <Motivational phone={pageData.metadata.phone}/>
       <Place {...pageData.place}/>
       <Statistics {...pageData.statistics}/>
       <Service/>
